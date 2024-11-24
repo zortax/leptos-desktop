@@ -1,0 +1,16 @@
+[package]
+name = "leptos-desktop"
+version = "0.1.0"
+authors = ["Leonard Seibold <leo@zrtx.de>"]
+edition = "2021"
+
+
+[workspace]
+members = ["leptos-desktop-macro"]
+
+[dependencies]
+leptos-desktop-macro = { path = "./leptos-desktop-macro" }
+cfg-if = "1"
+
+[dev-dependencies]
+tauri = "2"
